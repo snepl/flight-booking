@@ -1,6 +1,6 @@
 variable "backend_image" {
   type        = string
-  description = "ECR image URI with tag, e.g. <acct>.dkr.ecr.ap-south-1.amazonaws.com/flight-booking-backend:latest"
+  description = "ECR image URI with tag, e.g. <acct>.dkr.ecr.us-east-1.amazonaws.com/flight-booking-backend:latest"
 }
 
 variable "backend_container_port" {
