@@ -49,7 +49,7 @@ terraform {
   backend "s3" {
     bucket  = "ramroflight-terraform-state-files-0"
     key     = "flightbooking/dev/terraform.tfstate"
-    region  = "ap-south-1"
+    region  = "us-east-1"
   }
 }
 ```
@@ -106,7 +106,7 @@ Confirm when prompted.
 ```hcl
 bucket_name            = "flightbooking-dev-frontend-s1"
 
-backend_image          = "123456789012.dkr.ecr.ap-south-1.amazonaws.com/flight-booking-backend:latest"
+backend_image          = "123456789012.dkr.ecr.us-east-1.amazonaws.com/flight-booking-backend:latest"
 backend_container_port = 8080
 health_check_path      = "/health"
 
